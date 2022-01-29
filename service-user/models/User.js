@@ -1,28 +1,24 @@
-const { DataTypes } = require("sequelize/dist");
-const { sequelize } = require(".");
-
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
     "User",
     {
       id: {
         type: DataTypes.INTEGER,
-        primaryKey: true,
         autoIncrement: true,
+        primaryKey: true,
         allowNull: false,
       },
       name: {
-        type: DataTypes.SRING,
-        allowNull: false,
-      },
-      email: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,
       },
-      password_hash: {
+      profession: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
+      },
+      avatar: {
+        type: DataTypes.STRING,
+        allowNull: true,
       },
       role: {
         type: DataTypes.ENUM,
@@ -30,20 +26,21 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         defaultValue: "student",
       },
-      avatar: {
+      email: {
         type: DataTypes.STRING,
-        allowNull: true,
+        allowNull: false,
+        unique: true,
       },
-      profession: {
-        type: DataTypes.SRING,
-        allowNull: true,
+      password: {
+        type: DataTypes.STRING,
+        allowNull: false,
       },
-      created_at: {
+      createdAt: {
         field: "created_at",
         type: DataTypes.DATE,
         allowNull: false,
       },
-      updated_at: {
+      updatedAt: {
         field: "updated_at",
         type: DataTypes.DATE,
         allowNull: false,
