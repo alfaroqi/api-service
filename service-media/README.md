@@ -1,5 +1,3 @@
-## service-user
-
 ## Built With
 
 This is a simple project made with
