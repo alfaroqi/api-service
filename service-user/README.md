@@ -100,3 +100,11 @@ will return
   }
 }
 ```
+
+## Built With
+
+This is a simple project made with
+
+- [Express](https://expressjs.com/)
+- [Validator](https://www.npmjs.com/package/fastest-validator)
+- [env](https://www.npmjs.com/package/dotenv)
