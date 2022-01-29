@@ -103,7 +103,7 @@ will return
 
 ## Built With
 
-This is a simple project made with
+This is a project made with
 
 - [Express](https://expressjs.com/)
 - [Validator](https://www.npmjs.com/package/fastest-validator)
