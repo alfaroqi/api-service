@@ -80,7 +80,7 @@ will return
 get user by id
 
 ```
-$ `curl -X GET localhost:5000/users/1`
+$ curl -X GET localhost:5000/users/1
 ```
 
 will return
