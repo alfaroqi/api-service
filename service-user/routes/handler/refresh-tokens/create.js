@@ -35,7 +35,7 @@ module.exports = async (req, res) => {
     message: "Refresh token created",
     data: {
       id: createdRefreshToken.id,
-      token: createdRefreshToken.token,
+      token: createdRefreshToken.token, // you can also don't show this field if you don't want to expose it
     },
   });
 };
