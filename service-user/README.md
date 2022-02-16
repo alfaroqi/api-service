@@ -1,5 +1,17 @@
 ## service-user
 
+#### User Endpoint
+
+| METHOD |                API                 |    REMARKS     |
+| :----: | :--------------------------------: | :------------: |
+| `POST` |            /users/login            |     Login      |
+| `POST` |          /users/register           |    Register    |
+| `GET`  |           /users/:userId           | Get user by id |
+| `PUT`  |           /users/:userId           |     Update     |
+| `GET`  |               /users               |  Get Profile   |
+| `POST` |           /users/logout            |     Logout     |
+| `GET`  | /users?user_ids[]=xx&user_ids[]=xx |   List User    |
+
 example
 
 login
